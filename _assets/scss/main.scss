@@ -11,6 +11,8 @@
 // Layouts
 
 // Modules
+@import "modules/footer";
+@import "modules/navigation";
 
 body {
     background: white;
@@ -18,4 +20,8 @@ body {
 
 .container {
   @include outer-container;
+
+  .wrapper {
+    padding: 25px 0;
+  }
 }
