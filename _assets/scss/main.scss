@@ -1,4 +1,6 @@
+@import "vendor/normalize";
 @import "vendor/bourbon/bourbon";
+@import "grid-settings";
 @import "vendor/neat/neat";
 
 @import "syntax";
@@ -12,4 +14,8 @@
 
 body {
     background: white;
+}
+
+.container {
+  @include outer-container;
 }
