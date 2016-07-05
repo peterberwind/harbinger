@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 html {
   box-sizing: border-box; }
 
@@ -266,7 +268,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -309,7 +311,7 @@ input,
 select,
 textarea {
   display: block;
-  font-family: Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em; }
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
@@ -426,7 +428,7 @@ th {
 
 body {
   color: #333;
-  font-family: Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -436,7 +438,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.333em;
   line-height: 1.2;
   margin: 0 0 0.75em; }

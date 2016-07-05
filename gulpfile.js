@@ -4,6 +4,14 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 
+// TODO: Add Growl Notifications
+// TODO: Add JS Minification + Concatination
+// TODO: Add JS Hint
+// TODO: Add Scss Source Maps
+// TODO: Add Css Minification
+// TODO: Add Img Optimzation
+
+
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -56,7 +64,7 @@ gulp.task('sass', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_assets/scss/*.scss', ['sass']);
+    gulp.watch('_assets/scss/**/*.scss', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
