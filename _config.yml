@@ -1,4 +1,4 @@
-name: NO2 Jekyell Template
+name: NO2 Jekyell StarterKit
 markdown: redcarpet
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
