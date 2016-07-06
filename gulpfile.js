@@ -44,7 +44,8 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
  gulp.task('scripts', function() {
   return gulp.src('_assets/js/*.js')
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('_site/js'));
+    .pipe(gulp.dest('_site/js'))
+    .pipe(gulp.dest('js'));
 });
 
 
@@ -59,7 +60,8 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.write())
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('_site/css'));
+        .pipe(gulp.dest('_site/css'))
+        .pipe(gulp.dest('css'));
 });
 
 // Fonts

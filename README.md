@@ -53,9 +53,5 @@ gulp.task("deploy", ["jekyll-build"], function () {
 
 ## To Do
 
-- add js gulp taks
 - add package manager
 - add analytics
-- add deploy features
-- clean up defualt styles
-- add default delete-me pages

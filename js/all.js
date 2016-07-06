@@ -11,7 +11,7 @@ $(function() {
       if ($('#js-navigation-menu').is(':hidden')) {
         $('#js-navigation-menu').removeAttr('style');
       }
-    });
+    }); 
   });
 
 });
