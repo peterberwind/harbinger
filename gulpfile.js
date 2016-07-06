@@ -75,7 +75,8 @@ gulp.task('fonts', function() {
 gulp.task('images', function() {
     return gulp.src([
       '_assets/images/*.*'])
-    .pipe(gulp.dest('_site/images/'));
+    .pipe(gulp.dest('_site/images/'))
+    .pipe(gulp.dest('images'));
 });
 
 // Deploy
