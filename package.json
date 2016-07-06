@@ -13,6 +13,7 @@
     "gulp": "^3.8.8",
     "gulp-autoprefixer": "1.0.0",
     "gulp-concat": "^2.6.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-sass": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0"
   },
