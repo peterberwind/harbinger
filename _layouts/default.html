@@ -57,31 +57,13 @@ modern design and development agency  ¯\_(ツ)_/¯
   </div>
   <!-- END: stickey footer wrapper -->
 
-
   {% include footer.html %}
 
 
-
-
-
+  <!-- Vendor JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" charset="utf-8"></script>
-
-  <script type="text/javascript">
-  $(document).ready(function() {
-  var menuToggle = $('#js-mobile-menu').unbind();
-  $('#js-navigation-menu').removeClass("show");
-
-  menuToggle.on('click', function(e) {
-    e.preventDefault();
-    $('#js-navigation-menu').slideToggle(function(){
-      if($('#js-navigation-menu').is(':hidden')) {
-        $('#js-navigation-menu').removeAttr('style');
-      }
-    });
-  });
-});
-
-  </script>
+  <!-- Custom JS -->
+  <script src="/js/all.js"></script>
 
   <!-- TODO: Add Analytics -->
 
