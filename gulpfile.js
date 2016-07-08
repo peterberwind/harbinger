@@ -81,7 +81,7 @@ gulp.task('images', function() {
 
 // Deploy
 gulp.task("deploy", ["jekyll-build"], function () {
-    return gulp.src("*")
+    return gulp.src("/")
         .pipe(deploy());
 });
 
