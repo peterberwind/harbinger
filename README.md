@@ -41,7 +41,7 @@ As this is just a Jekyll project, you can use any of the commands listed in thei
 This will create a gh-pages branch and push commit changes to branch
 
 ```shell
-$ gulp deploy
+$ gulp deploy 
 ```
 
 ## To Do
