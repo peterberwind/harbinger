@@ -1,0 +1,73 @@
+body {
+  background-color: $black;
+}
+
+.section {
+  min-height: 100vh;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    border-bottom: 5px solid $white;
+    padding-bottom: 5px;
+  }
+
+  h2 {
+    // border-bottom: 8px solid $white;
+    // padding-bottom: 5px;
+    // display: inline-block;
+  }
+
+  .divider {
+    width: 150px;
+    background-color: $white;
+    height: 8px;
+    margin: 50px 0;
+  }
+
+  .wrapper {
+    @include outer-container;
+  }
+
+
+  &-hero {
+    text-align: center;
+    @include background(url("../images/hero.jpg"));
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h1 {
+      font-size: 7rem;
+      margin: 0;
+    }
+
+    .scroll-action {
+      align-self: flex-end;
+    }
+  }
+
+  &-about {
+
+  }
+
+  &-clients {
+
+    li {
+      padding: 30px 0;
+    }
+
+    &:nth-child(3n+1) {
+      align-items: flex-start;
+    }
+
+  }
+
+  &-contact {
+
+    text-align: center;
+  }
+}

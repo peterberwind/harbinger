@@ -1,17 +1,11 @@
 $(function() {
-  // Custom JS goes here
 
-  // Navigation JS - http://refills.bourbon.io/
-  var menuToggle = $('#js-mobile-menu').unbind();
-  $('#js-navigation-menu').removeClass("show");
-
-  menuToggle.on('click', function(e) {
-    e.preventDefault();
-    $('#js-navigation-menu').slideToggle(function() {
-      if ($('#js-navigation-menu').is(':hidden')) {
-        $('#js-navigation-menu').removeAttr('style');
-      }
-    });
+  // Animate On Scroll
+  window.sr = ScrollReveal();
+  sr.reveal('.fadein', {
+    scale: 1,
+    reset: true,
+    duration: 1200,
   });
 
 });

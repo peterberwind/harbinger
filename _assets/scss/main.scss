@@ -5,23 +5,31 @@
 
 @import "syntax";
 
+
+
 // Base
 @import "base/base";
 
 // Layouts
+@import "layout/main";
 
 // Modules
 @import "modules/footer";
 @import "modules/navigation";
 
-body {
-    background: white;
-}
-
-.container {
-  @include outer-container;
-
-  .wrapper {
-    padding: 25px 0;
-  }
-}
+// .waypoint {
+//   opacity: 0.3;
+// 	filter: alpha(opacity=30);
+// 	-webkit-transition: opacity 0.3s ease-out;
+// 	-moz-transition: opacity 0.3s ease-in-out;
+// 	-ms-transition: opacity 0.3s ease-in-out;
+// 	-o-transition: opacity 0.3s ease-in-out;
+// 	transition: opacity 0.3s ease-in-out;
+// }
+//
+// .waypoint-here {
+// 	opacity: 1;
+// 	filter: alpha(opacity=100);
+// }
+//
+// @import "vendor/animate";

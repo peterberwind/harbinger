@@ -3,8 +3,8 @@
 // $large-screen: 900px;
 
 // Typography
-$base-font-family: 'Open Sans', sans-serif;
-$heading-font-family: 'Raleway', sans-serif;
+$base-font-family: 'Moderat-Bold';
+$heading-font-family: 'Moderat-Bold';
 
 // Font Sizes
 $base-font-size: 1em;
@@ -24,10 +24,12 @@ $blue: #1565c0;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$black: #000;
+$white: #fff;
 
 // Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+$base-font-color: $white;
+$action-color: $white;
 
 // Border
 $base-border-color: $light-gray;

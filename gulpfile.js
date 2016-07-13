@@ -32,7 +32,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 });
 
 // BrowserSync
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'scripts', 'images', 'fonts', 'jekyll-build'], function() {
     browserSync({
         server: {
             baseDir: '_site'
@@ -42,7 +42,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 
 // Scripts
  gulp.task('scripts', function() {
-  return gulp.src('_assets/js/*.js')
+  return gulp.src(['_assets/js/vendor/*.js', '_assets/js/application.js'])
     .pipe(concat('all.js'))
     .pipe(gulp.dest('_site/js'))
     .pipe(gulp.dest('js'));
@@ -99,4 +99,4 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'watch', ]);
+gulp.task('default', ['browser-sync', 'watch' ]);
