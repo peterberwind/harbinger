@@ -68,7 +68,8 @@ gulp.task('sass', function () {
 gulp.task('fonts', function() {
     return gulp.src([
       '_assets/fonts/*.*'])
-    .pipe(gulp.dest('_site/fonts/'));
+    .pipe(gulp.dest('_site/fonts/'))
+    .pipe(gulp.dest('fonts'));
 });
 
 // Images

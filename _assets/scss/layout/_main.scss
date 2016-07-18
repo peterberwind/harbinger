@@ -38,15 +38,14 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-
     h1 {
+      margin: 0;
       font-size: 7rem;
       margin: 0;
     }
 
     .scroll-action {
-      align-self: flex-end;
+      
     }
   }
 
