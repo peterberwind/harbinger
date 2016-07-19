@@ -1,3 +1,8 @@
+html {
+  @include media($mobile) {
+    font-size: 10px;
+  }
+}
 body {
   background-color: $black;
 }
@@ -8,6 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  @include media($mobile) {font-size: 2rem}
   a {
     border-bottom: 5px solid $white;
     padding-bottom: 5px;
@@ -22,7 +28,7 @@ body {
       display: block;
       width: rem(80);
       background-color: $white;
-      height: 8px;
+      height: 0.15em;
       margin-top: 25px;
     }
   }
@@ -39,6 +45,7 @@ body {
   &-hero {
     text-align: center;
     @include background(url("../images/hero.jpg"));
+    background-position: center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -47,6 +54,7 @@ body {
       font-size: 7rem;
       margin: 0;
       letter-spacing: $base-letter-spacing;
+      @include media($mobile) {font-size: 4rem}
     }
 
     .scroll-action {
@@ -86,8 +94,17 @@ body {
     }
     .col {
       @include span-columns(4);
-      li {
-        margin-top: 150px;
+      @include media($mobile) {
+        @include span-columns(12);
+      }
+      & {
+        li {
+          margin-top: 150px;
+          @include media($mobile) {
+            margin-top: 20px !important;
+            text-align: left !important;
+          }
+        }
       }
       &:nth-child(3n-1) {
         li {

@@ -1,6 +1,6 @@
 // Breakpoints
-// $medium-screen: 600px;
-// $large-screen: 900px;
+$mobile: new-breakpoint(max-width 1000px);
+
 
 // Typography
 $base-font-family: 'Moderat-Bold';
