@@ -1,5 +1,5 @@
 .header-main {
-  padding: 10px 0;
+  padding: 20px 0;
   position: fixed;
   width: 100%;
   display: flex;
@@ -15,7 +15,7 @@
     li {
       padding: 10px 30px;
       font-family: "Moderat";
-      letter-spacing: rem(3);
+      letter-spacing: $base-letter-spacing;
     }
   }
 }

@@ -42,10 +42,29 @@ body {
       margin: 0;
       font-size: 7rem;
       margin: 0;
+      letter-spacing: $base-letter-spacing;
     }
 
     .scroll-action {
-      
+      border-bottom: 0;
+      position: absolute;
+      text-decoration: none;
+      bottom: 10px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      .text {
+        font-family: 'Moderat-Bold';
+        letter-spacing: $base-letter-spacing;
+      }
+      span {
+        font-family: 'Moderat';
+        font-size: rem(20);
+        display: block;
+      }
+      .arrow {
+        margin-top: 10px;
+        font-size: rem(40);
+      }
     }
   }
 
