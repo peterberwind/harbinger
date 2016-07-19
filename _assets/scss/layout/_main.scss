@@ -8,7 +8,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   a {
     border-bottom: 5px solid $white;
     padding-bottom: 5px;
@@ -18,17 +17,22 @@ body {
     // border-bottom: 8px solid $white;
     // padding-bottom: 5px;
     // display: inline-block;
+    &:after {
+      content: "";
+      display: block;
+      width: rem(80);
+      background-color: $white;
+      height: 8px;
+      margin-top: 25px;
+    }
   }
 
-  .divider {
-    width: 150px;
-    background-color: $white;
-    height: 8px;
-    margin: 50px 0;
-  }
+
 
   .wrapper {
     @include outer-container;
+    padding: 0 $gutter*2;
+    width: 100%
   }
 
 
@@ -69,17 +73,39 @@ body {
   }
 
   &-about {
-
+    p {
+      margin-top: 1.5em;
+    }
   }
 
   &-clients {
-
-    li {
-      padding: 30px 0;
+    .row {
+      @include outer-container;
+      width: 100%;
+      max-width: 100%;
+    }
+    .col {
+      @include span-columns(4);
+      li {
+        margin-top: 150px;
+      }
+      &:nth-child(3n-1) {
+        li {
+          margin-top: 200px;
+          text-align: center;
+        }
+      }
+      &:nth-child(3n) {
+        li {
+          margin-top: 250px;
+          text-align: right;
+        }
+      }
     }
 
-    &:nth-child(3n+1) {
-      align-items: flex-start;
+
+    .wrapper {
+      margin: 0
     }
 
   }
